@@ -63,21 +63,7 @@ footer {
 </style></head><body><header>
 <h1>災害情報ポータル</h1>
 <p>被災時に必要な情報へすぐアクセスするためのページ</p>
-</header><div class="container"><div class="card">
-<h2>📍 地域を選択</h2>
-
-<p>
-現在地の自治体情報を確認してください。
-</p>
-
-<select id="prefecture" style="width:100%;padding:15px;font-size:18px;">
-<option value="">都道府県を選択してください</option>
-<option value="kumamoto">熊本県</option>
-</select>
-
-<a class="button" onclick="openDisasterPage()">
-熊本県 防災情報を見る
-</a>
+</header><div class="container">
 
 </div><div class="card">
 
@@ -133,26 +119,7 @@ footer {
 災害情報支援プラットフォーム
 </footer><script>
 
-function openDisasterPage(){
 
-let pref = document.getElementById("prefecture").value;
-
-let pages = {
-
-
-
-kumamoto:"https://www.pref.kumamoto.jp/life/1/"
-
-};
-
-if(pages[pref]){
-window.open(pages[pref]);
-}
-else{
-alert("都道府県を選択してください");
-}
-
-}
 
 </script></body>
 </html>
